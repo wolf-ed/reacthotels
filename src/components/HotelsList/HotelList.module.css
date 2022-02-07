@@ -1,0 +1,60 @@
+
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.filter-form {
+  margin: -2rem auto 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 30rem;
+  padding: 1rem;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.19);
+  z-index: 1;
+}
+.filter-form div{
+  padding-left: 10px;
+}
+
+.filter-form div,
+.filter-form button {
+align-items: center;
+margin: 0;
+  font-size: 1.2rem;
+}
+
+.plus-button 
+, .minus-button {
+  font-size: 2rem;
+  border: none;
+  background-color: transparent;
+}
+
+.plus-button:hover 
+, .minus-button:hover {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+@media (max-width: 550px) {
+  .filter-form {
+    width: 20rem;
+  }
+  .filter-form div{
+    padding-left: 5px;
+  }
+  
+  .filter-form div,
+  .filter-form button {
+  margin: 0;
+    font-size: 0.7rem;
+  }
+}
