@@ -19,7 +19,6 @@
     overflow: hidden;
     padding: 0;
     z-index: 30;
-    animation: slize-down 300ms ease-our forwards;
     justify-content: right;
 }
 
@@ -40,15 +39,3 @@
     }
 }
 
-
-
-@keyframes slize-down {
-    from {
-        opacity: 0;
-        transform: translateY(-3rem);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
