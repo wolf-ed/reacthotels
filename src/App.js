@@ -41,7 +41,7 @@ function App() {
     //  }
    
    
-  }, [getHotels])
+  }, [])
 
   return (
     <div className="App">

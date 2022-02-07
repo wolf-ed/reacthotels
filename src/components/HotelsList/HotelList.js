@@ -65,7 +65,7 @@ const HotelList = (props) => {
 
     useEffect(() => {
         filterHotels()
-    }, [stars, adults, children, filterHotels])
+    }, [stars, adults, children])
 
 
 
