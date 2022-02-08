@@ -1,69 +1,73 @@
 :root {
-    --primary-size:  200px;
-    --hover-size: 210px;
+  --primary-size: 200px;
+  --hover-size: 210px;
+  --410-screens: 15rem;
+  --550-screens: 20rem;
 }
 
-
-.images-container{
-    margin: 3rem 0 2rem 1rem;
-    width: fit-content;
-    max-height: 100px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
+.images-container {
+  margin: 3rem 0 2rem 1rem;
+  width: fit-content;
+  max-height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
 }
-
 
 .images-container img {
-    min-height: var(--primary-size);
-    min-width: var(--primary-size);
-    max-height: var(--primary-size);
-    max-width: var(--primary-size);
+  min-height: var(--primary-size);
+  min-width: var(--primary-size);
+  max-height: var(--primary-size);
+  max-width: var(--primary-size);
 }
 
 .images-container img:hover {
-        min-height: var(--hover-size);
-        min-width: var(--hover-size);
-        max-height: var(--hover-size);
-        max-width: var(--hover-size);
+  min-height: var(--hover-size);
+  min-width: var(--hover-size);
+  max-height: var(--hover-size);
+  max-width: var(--hover-size);
 }
 
 .button-icon {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .images-container button {
-    min-height: fit-content;
-    padding: 5px 0 5px 0;
-    border: none;
-    background-color: rgba(255, 252, 252, 0.5);
-    position: absolute;
+  min-height: fit-content;
+  padding: 5px 0 5px 0;
+  border: none;
+  background-color: rgba(255, 252, 252, 0.5);
+  position: absolute;
 }
 
 .images-container button:hover .button-icon {
-    font-size: 2rem;
-    color:aqua
+  font-size: 2rem;
+  color: aqua;
 }
 
 .images-buttons-left {
-    left: 0;
+  left: 0;
 }
 
 .images-buttons-right {
-    right: 0;
+  right: 0;
 }
 
 @media (max-width: 410px) {
-    :root {
-        --primary-size:  100px;
-        --hover-size: 100px;
-    }
+  .modal-img {
+    min-height: var(--410-screens);
+    min-width: var(--410-screens);
+    max-height: var(--410-screens);
+    max-width: var(--410-screens);
+  }
 }
 
 @media (max-width: 550px) {
-    :root {
-        --primary-size:  150px;
-        --hover-size: 160px;
-    }
+  .modal-img {
+    min-height: var(--550-screens);
+    min-width: var(--550-screens);
+    max-height: var(--550-screens);
+    max-width: var(--550-screens);
   }
+}
