@@ -20,25 +20,25 @@ const HotelList = (props) => {
         setStars(starsNum)
     }
     const plusAdultHandler = (event) => {
-        if(adults === 6){
+        if (adults === 6) {
             return
         }
         setAdults(prevState => prevState + 1)
     }
     const minusAdultHandler = (event) => {
-        if(adults === 1){
+        if (adults === 1) {
             return
         }
         setAdults(prevState => prevState - 1)
     }
     const plusChildtHandler = (event) => {
-        if(children === 4){
+        if (children === 4) {
             return
         }
         setChildren(prevState => prevState + 1)
     }
     const minusChildtHandler = (event) => {
-        if(children === 0){
+        if (children === 0) {
             return
         }
         setChildren(prevState => prevState - 1)
@@ -48,7 +48,7 @@ const HotelList = (props) => {
 
     const filterHotels = () => {
         let filteredByStars = props.hotelList.filter((hotel) =>
-        hotel.starRating >= stars)
+            hotel.starRating >= stars)
         let filteredByCapacity = filteredByStars.filter(hotel =>
             filterRooms(hotel).length > 0  //this returns an array of rooms, not an array of Hotels
         )
@@ -72,42 +72,43 @@ const HotelList = (props) => {
 
 
     const arrayOfHotels = hotelsFiltered.map(hotel => <Hotel
-        key={hotel.id}  
+        key={hotel.id}
         rooms={hotel.rooms}
         hotel={hotel} // =============================================
         adults={adults}
         children={children}
-        />
+    />
     );
 
 
 
     return <Fragment >
         <section className={styles['filter-form']}>
-        <Stars
-        className={styles.stars}
-        onSetStars={starsChangeHandler}/>
-        <div>
-            Adults:<button className={styles['plus-button']}
-            onClick={plusAdultHandler}>+</button>
-            {adults}
-            <button className={styles['minus-button']}
-            onClick={minusAdultHandler}>-</button>
-        </div>
-        <div>
-            Children:<button className={styles['plus-button']}
-            onClick={plusChildtHandler}>+</button>
-            {children}
-            <button className={styles['minus-button']}
-            onClick={minusChildtHandler}>-</button>
-        </div>
+            <Stars
+                className={styles.stars}
+                onSetStars={starsChangeHandler} />
+            <div>
+                Adults:<button className={styles['plus-button']}
+                    onClick={plusAdultHandler}>+</button>
+                {adults}
+                <button className={styles['minus-button']}
+                    onClick={minusAdultHandler}>-</button>
+            </div>
+            <div>
+                Children:<button className={styles['plus-button']}
+                    onClick={plusChildtHandler}>+</button>
+                {children}
+                <button className={styles['minus-button']}
+                    onClick={minusChildtHandler}>-</button>
+            </div>
         </section>
-        
-        
+
+
 
 
         <ul className={styles['hotels-list']}>
-            {arrayOfHotels}
+            {arrayOfHotels.length > 0 && arrayOfHotels}
+            {arrayOfHotels.length === 0 && <h1>No rooms found</h1>}
         </ul>
 
     </Fragment>
