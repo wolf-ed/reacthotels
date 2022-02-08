@@ -32,14 +32,6 @@ function App() {
    getHotels(hotelsUrl)
    .then(response => setHotelsList(response))
 
-   getHotels(hotelsUrl)
-   .then(response => setHeader(response[0].images[0]))
-
-    //  if(hotelsList[0].images[0].url){
-    // setHeader(hotelsList[0].images[0].url)
-       
-    //  }
-   
    
   }, [])
 
