@@ -34,7 +34,6 @@ const Images = (props) => {
     }
 
     const clickImageHandler = (event) => {
-        console.log('it works')
         setShowImageModal(true)
     }
 
