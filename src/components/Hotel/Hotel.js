@@ -17,24 +17,24 @@ const Hotel = (props) => {
         mappedRooms = filterRooms.map(room => <Room key={room.id} room={room} />)
     }
 
-    
+
 
     return <li className={styles.hotel}>
         <section className={styles['hotel-data']}>
-        <div className={styles.info}>
-        <Images images={props.hotel.images}/>
-        <div >
-        <h2>{props.hotel.name}</h2>
-        <p>{props.hotel.address1}</p>
-        <p>{props.hotel.address2}</p>
-        </div>
-        </div>
+            <div className={styles.info}>
+                <Images images={props.hotel.images} />
+                <div className={styles['sub-info']}>
+                    <h2>{props.hotel.name}</h2>
+                    <p>{props.hotel.address1}</p>
+                    <p>{props.hotel.address2}</p>
+                </div>
+            </div>
 
 
-        <h2 className={styles.stars}><StarRating rating={props.hotel.starRating} /></h2>
-        
+            <h2 className={styles.stars}><StarRating rating={props.hotel.starRating} /></h2>
+
         </section>
-        
+
 
         <ul>
             {newHotels && mappedRooms}
