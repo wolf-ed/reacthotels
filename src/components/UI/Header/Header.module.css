@@ -19,36 +19,6 @@
   transform: translateY(-35%);
 }
 
-@media (max-width: 410px) {
-  .header {
-    width: 100%;
-  }
-  .header img {
-    width: 100%;
-    transform: translateY(0%);
-  }
-}
-
-@media (max-width: 550px) {
-  .header {
-    width: 100%;
-  }
-  .header img {
-    width: 100%;
-    transform: translateY(0%);
-  }
-}
-
-@media (max-width: 410px) {
-  .header {
-    width: 100%;
-  }
-  .header img {
-    width: 100%;
-    transform: translateY(0%);
-  }
-}
-
 @media (max-width: 770px) {
   .header {
     width: 100%;

@@ -12,12 +12,12 @@
 
 @media (max-width: 410px) {
   .star {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 }
 
 @media (max-width: 550px) {
   .star {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
