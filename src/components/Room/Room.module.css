@@ -55,9 +55,9 @@
 }
 
 @media (max-width: 550px) {
-    .room-info {
-        min-width: var(--info-550screens);
-        width: var(--info-550screens);
-        max-width: var(--info-550screens);
-      }
+  .room-info {
+    min-width: var(--info-550screens);
+    width: var(--info-550screens);
+    max-width: var(--info-550screens);
+  }
 }

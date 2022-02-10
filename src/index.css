@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
+  width: 100%;
   display: flex;
   background-color: rgba(245, 245, 245, 255);
   flex-direction: column;
