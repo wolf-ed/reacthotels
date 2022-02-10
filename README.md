@@ -12,6 +12,7 @@ To run this app it locally:
 * Download this repository
 * Open your terminal inside the repository folder
 * Inside that folder execute in the terminal:  npm install -y
+to use npm you need to install node.js: https://nodejs.org/
 * Once "npm install -y" has finished, you can launch this app in your local server(localhost:3000/) executing "npm start" in your terminal.
 
 ## Technologies
