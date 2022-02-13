@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# hotelsreact
+# Hotels React
 
 ## Author: Ed Wolf
 
@@ -21,3 +21,5 @@ to use npm you need to install node.js: https://nodejs.org/
 * HTML and CSS
 * Responsive design
 * React Icons: **https://react-icons.github.io/react-icons**
+
+## TypeScript version: https://github.com/wolf-ed/react-typescript-hotels
